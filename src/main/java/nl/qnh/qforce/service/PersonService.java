@@ -17,9 +17,8 @@
 package nl.qnh.qforce.service;
 
 import nl.qnh.qforce.domain.Person;
-
-import java.util.List;
 import java.util.Optional;
+import java.util.List;
 
 /**
  * The person service to search and retrieve persons.
@@ -44,4 +43,3 @@ public interface PersonService {
      */
     Optional<Person> get(long id);
 }
-

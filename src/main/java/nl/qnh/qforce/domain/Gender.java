@@ -16,12 +16,16 @@
 
 package nl.qnh.qforce.domain;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 /**
  * The gender.
  *
  * @author QNH
  */
 public enum Gender {
-
-    MALE, FEMALE, UNKNOWN, NOT_APPLICABLE
+    @JsonAlias({"male", "MALE"}) MALE,
+    @JsonAlias({"female", "FEMALE"}) FEMALE,
+    @JsonAlias({"unkown", "UNKNOWN"}) UNKNOWN,
+    @JsonAlias({"n/a", "NOT_APPLICABLE"}) NOT_APPLICABLE
 }
